@@ -8,7 +8,7 @@
 	<header class="main-header">
 		<div class="container">
 			<div class="main-logo">
-				<a href="#">Device</a>
+				<a href="index.php">Device</a>
 			</div>
 			<div class="main-header-index-panel">
 				<form action="https://echo.htmlacademy.ru" method="get">
@@ -17,7 +17,7 @@
 				</form>
 				<ul class="main-catalog">
 					<li>
-						<a href="#">Каталог товаров</a>
+						<a>Каталог товаров</a>
 					</li>
 					<li>
 						<a href="#">Виртуальная реальность</a>
@@ -64,9 +64,9 @@
 		</div>
 	</header>
 	<div class="section-title">
-		Моноподы для селфи
+		<h1>Моноподы для селфи</h1>
 	</div>
-	<div class="Breadcrumbs">
+	<div class="section-list">
 		<ul>
 			<li>
 				<a href="#">Главная</a>
@@ -75,24 +75,24 @@
 				<a href="#">Каталог товаров</a>
 			</li>
 			<li>
-				<a href="#">Монопод для селфи</a>
+				<a>Монопод для селфи</a>
 			</li>
 		</ul>
 	</div>
-	<div class="catalog">
+	<div class="section">
 		<div class="container">
-			<div class="catalog-folter">
-				<div class="catalog-folter-name">
-					Фильтр:
+			<aside class="catalog-filter">
+				<div class="catalog-filter-name">
+					<h2>Фильтр:</h2>
 				</div>
 				<div class="catalog-filter-settings">
 					<form action="https://echo.htmlacademy.ru" method="get">
 						<div class="catalog-filter-settings-price">
-							Стоимость
+							<h2>Стоимость</h2>
 							<input type="range" min="0" max="5000" value="3000" step="100">
 						</div>	
 						<div class="catalog-filter-settings-color">
-							Цвет
+							<h2>Цвет</h2>
 							<input type="checkbox" name="color" value="black" id="color-black"/><label for="color-black">Черный</label>
 							<input type="checkbox" name="color" value="" id="color-white"/><label for="color-white">Белый</label>
 							<input type="checkbox" name="color" value="" id="color-blue"/><label for="color-blue">Синий</label>
@@ -100,17 +100,17 @@
 							<input type="checkbox" name="color" value="" id="color-pink"/><label for="color-pink">Розовый</label>
 						</div>
 						<div class="catalog-filter-settings-bluetooth">
-							Bluetooth
+							<h2>Bluetooth</h2>
 							<input name="bluetooth" id="bluetooth-yes" type="radio" value="yes" checked> <label for="bluetooth-yes">Есть</label>
 							<input name="bluetooth" id="bluetooth-no" type="radio" value="no"> <label for="bluetooth-no">Нет</label>
 						</div>
 						<button type="submit">Показать</button>
 					</form>
 				</div>
-			</div>
+			</aside>
 		</div>
-		<div class="catalog-sort">
-			 	Сортировка:
+		<div class="section-sort">
+			 	<h2>Сортировка:</h2>
 				<ul>
 					<li>
 						<a href="#">По цене</a>
@@ -121,6 +121,8 @@
 					<li>
 						<a href="#">По популярности</a>
 					</li>
+				</ul>
+				<ul>
 					<li>
 						<a class="catalog-sort-top" href="#"></a>
 					</li>
@@ -129,43 +131,43 @@
 					</li>
 				</ul>
 		</div>
-		<div class="catalog-items">
-			<div class="item">
+		<div class="section-items">
+			<article  class="item">
 				<div class="item-hidden">
 					<a class="btn" href="#">В корзину</a>
 					<a href="#">Добавить к сравнению</a>
 				</div>
 				<img src="http://placehold.it/380x360" height="380" width="360" alt="Любительская селфи-палка">
-				Любительская селфи-палка
+				<h1>Любительская селфи-палка</h1>
 				<span class="item-price">500 руб</span>
-			</div>
-			<div class="item">
+			</article >
+			<article  class="item">
 				<div class="item-hidden">
 					<a class="btn" href="#">В корзину</a>
 					<a href="#">Добавить к сравнению</a>
 				</div>
 				<img src="http://placehold.it/380x360" height="380" width="360" alt="Профессиональная селфи-палка ">
-				Профессиональная селфи-палка
+				<h1>Профессиональная селфи-палка</h1>
 				<span class="item-price">1500 руб</span>
-			</div>
-			<div class="item">
+			</article >
+			<article  class="item">
 				<div class="item-hidden">
 					<a class="btn" href="#">В корзину</a>
 					<a href="#">Добавить к сравнению</a>
 				</div>
 				<img src="http://placehold.it/380x360" height="380" width="360" alt="Непотопляемая селфи-палка">
-				Непотопляемая селфи-палка
+				<h1>Непотопляемая селфи-палка</h1>
 				<span class="item-price">2500 руб</span>
-			</div>
-			<div class="item">
+			</article >
+			<article  class="item">
 				<div class="item-hidden">
 					<a class="btn" href="#">В корзину</a>
 					<a href="#">Добавить к сравнению</a>
 				</div>
 				<img src="http://placehold.it/380x360" height="380" width="360" alt="Селфи-палка «Следуй за мной»">
-				Селфи-палка «Следуй за мной»
+				<h1>Селфи-палка «Следуй за мной»</h1>
 				<span class="item-price">4900 руб</span>
-			</div>
+			</article >
 		</div>
 		<div class="catalog-pagination">
 			<a class="pagination-prev">Назад</a>
