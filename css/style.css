@@ -1,0 +1,16 @@
+body{
+	font: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	color: #464646;
+}
+h1, h2, h3{
+	font: 'Gilroy', sans-serif;
+	font-weight: 800;
+	color: #000000;
+}
+h1{font-size: 47px;}
+h2{font-size: 47px;}
+h3{font-size: 18px;}
