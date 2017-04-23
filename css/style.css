@@ -1,4 +1,4 @@
-body{
+body {
 	font: 'Open Sans', sans-serif;
 	font-style: normal;
 	font-size: 15px;
@@ -6,11 +6,176 @@ body{
 	line-height: 30px;
 	color: #464646;
 }
-h1, h2, h3{
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
 	font: 'Gilroy', sans-serif;
 	font-weight: 800;
 	color: #000000;
 }
-h1{font-size: 47px;}
-h2{font-size: 47px;}
-h3{font-size: 18px;}
+
+h1 {
+	font-size: 47px;
+}
+
+h2 {
+	font-size: 47px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+.container {
+	width: 1160px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 auto;
+}
+
+.main-header {
+	margin-top: 40px;
+}
+
+.main-header .container {
+	background-color: #f7e296;
+}
+
+.main-header .logo {
+	outline: 1px solid orange;
+}
+
+.main-header .index-panel {
+	float: left;
+	width: 500px;
+	padding-left: 60px;
+	padding-right: 20px;
+	outline: 1px solid red;
+}
+
+.main-header .user-panel {
+	float: right;
+	width: 500px;
+	padding-left: 20px;
+	padding-right: 60px;
+	outline: 1px solid green;
+}
+
+.slider {
+	margin-bottom: 90px;
+}
+
+.slider .slider-img {
+	float: left;
+	width: 580px;
+	outline: 1px solid red;
+}
+
+.slider .slider-about {
+	float: right;
+	width: 500px;
+	padding-left: 20px;
+	padding-right: 60px;
+	outline: 1px solid green;
+}
+
+.catalog-popular {
+	margin-bottom: 160px;
+}
+
+.catalog-popular .item {
+	float: left;
+	width: 160px;
+	margin-right: 40px;
+	font: 'Gilroy', sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.catalog-popular .item:last-child {
+	margin-right: 0;
+}
+
+.catalog-popular .item img {
+	width: 160px;
+	height: 160px;
+	background-color: #f7e296;
+}
+
+.service {
+	margin-bottom: 94px;
+}
+
+.service-list {
+	float: left;
+	width: 280px;
+	outline: 1px solid red;
+}
+
+.service-slide {
+	float: right;
+	padding-left: 120px;
+	width: 760px;
+	outline: 1px solid green;
+}
+
+.logotype {
+	margin-bottom: 94px;
+}
+
+.logotype a {
+	float: left;
+	margin-right: 40px;
+}
+
+.logotype a:last-child {
+	margin-right: 0;
+}
+
+.about-info {
+	float: left;
+	width: 480px;
+	padding-right: 100px;
+}
+
+.about-contact {
+	float: right;
+	width: 560px;
+	padding-left: 20px;
+}
+
+.main-footer {
+	margin-top: 90px;
+	background-color: #464646;
+}
+
+.footer-info {
+	float: left;
+	width: 360px; 
+}
+
+.footer-link {
+	float: left;
+	width: 440px; 
+}
+
+.user-panel {
+	float: right;
+	width: 360px;
+}
+
+.hidden {
+	display: none;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
