@@ -29,18 +29,127 @@ a {
 	background-color: #f7e296;
 }
 
-.main-header .logo {
-	position: absolute;
-	top: -20px;
-	outline: 1px solid orange;
-}
-
 .main-header .index-panel {
 	float: left;
 	width: 500px;
-	padding-left: 60px;
+	padding-left: 39px;
 	padding-right: 20px;
-	outline: 1px solid red;
+}
+
+.main-header .logo {
+	position: absolute;
+	top: -19px;
+	padding-left: 39px;
+}
+
+.main-header .logo :hover {
+	opacity: 0.6;
+	color: red;
+}
+
+.main-header form {
+	margin-top: 50px;
+	font-size: 0;
+}
+
+.main-header input[type="search"] {
+	width: 356px;
+	height: 49px;
+	padding-left: 40px;
+	background-color: #f7e296;
+	font-size: 15px;
+	line-height: 36px;
+	vertical-align: middle;
+	color: #000000;
+	border: none;
+	border-bottom: 2px solid #f7e296;
+	outline: none;
+	opacity: 0.3;
+}
+
+.main-header input[type="search"]:hover {
+	opacity: 0.6;
+}
+
+.main-header input[type="search"]::-webkit-input-placeholder {
+	color: #000000;
+}
+
+.main-header input[type="search"]::-moz-placeholder {
+	color: #000000;
+}
+
+.main-header input[type="search"]:-moz-placeholder {
+	color: #000000;
+}
+
+.main-header input[type="search"]:-ms-input-placeholder {
+	color: #000000;
+}
+
+.main-header input[type="search"]:focus {
+	border-bottom: 2px solid #000000;
+	opacity: 1;
+}
+
+.main-header .btn-search {
+	display: none;
+	width: 85px;
+	height: 49px;
+	font-size: 15px;
+	line-height: 36px;
+	vertical-align: middle;
+	color: #000000;
+	background-color: inherit;
+	border: 2px solid #000000;
+	outline: none;
+	cursor: pointer;
+}
+
+.main-header input[type="search"]:focus~.btn-search {
+	display: inline-block;
+}
+
+.main-header .btn-search:hover {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+.main-header .btn-search:active {
+	display: inline-block;
+	color: #747474;
+}
+
+.main-catalog ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.main-catalog li {
+	display: inline-block;
+	width: 238px;
+	font-size: 15px;
+	line-height: 36px;
+}
+
+.main-catalog:hover li {}
+
+.main-catalog li:first-child {
+	display: block;
+	font-size: 18px;
+	font-weight: 800;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.main-catalog li:hover {
+	opacity: 0.6;
+}
+
+.main-catalog li:active {
+	opacity: 0.3;
 }
 
 .main-header .user-panel {
@@ -48,7 +157,6 @@ a {
 	width: 500px;
 	padding-left: 20px;
 	padding-right: 60px;
-	outline: 1px solid green;
 }
 
 .slider {
@@ -101,6 +209,7 @@ a {
 
 .service {
 	margin-bottom: 94px;
+	background-color: #e5e5e5;
 }
 
 .service-list {
@@ -140,7 +249,6 @@ service-slide h2 {
 	float: left;
 	width: 480px;
 	padding-right: 100px;
-	outline: 1px solid red;
 }
 
 .about-contact {
@@ -159,10 +267,11 @@ service-slide h2 {
 
 .section .catalog-filter {
 	float: left;
-	width: 200px;
-	padding-left: 60px;
-	padding-right: 68px;
-	outline: 1px solid red;
+	background-color: #eeeeee;
+}
+
+.filter-name {
+	background-color: #dcdcdc;
 }
 
 .filter-name h3 {
@@ -172,10 +281,16 @@ service-slide h2 {
 	color: #000000;
 }
 
+.filter-settings {
+	width: 200px;
+	padding-left: 60px;
+	padding-right: 68px;
+}
+
 .section .section-sort {
 	float: right;
 	width: 832px;
-	outline: 1px solid green;
+	background-color: #ebebeb;
 }
 
 .section .section-items {
@@ -184,7 +299,6 @@ service-slide h2 {
 	margin-left: 72px;
 	margin-top: 69px;
 	font-size: 0;
-	outline: 1px solid blue;
 }
 
 .section-items .item {
@@ -207,7 +321,7 @@ service-slide h2 {
 .catalog-pagination {
 	float: right;
 	width: 760px;
-	outline: 1px solid orange;
+	background-color: #ebebeb;
 }
 
 .main-footer {
@@ -215,22 +329,37 @@ service-slide h2 {
 	background-color: #464646;
 }
 
-.footer-info {
+.main-footer .footer-info {
 	float: left;
 	width: 360px;
-	outline: 1px solid red;
 }
 
-.footer-link {
+.main-footer .footer-link {
 	float: left;
 	width: 440px;
-	outline: 1px solid green;
 }
 
-.user-panel {
+.main-footer .user-panel {
 	float: right;
 	width: 360px;
-	outline: 1px solid blue;
+}
+
+.form-aut {
+	display: none;
+	width: 760px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -275px;
+	margin-left: -480px;
+	padding-left: 100px;
+	padding-top: 90px;
+	padding-right: 100px;
+	padding-bottom: 85px;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
 }
 
 .hidden {
