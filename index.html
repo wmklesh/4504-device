@@ -3,9 +3,9 @@
 
 <head>
 	<meta charset="utf-8">
-	<link href=" " rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<title>HTML Academy: Девайс</title>
 </head>
 
@@ -75,10 +75,13 @@
 		</div>
 	</header>
 	<div class="slider">
+		<input type="radio" name="point" id="slide-1" checked>
+		<input type="radio" name="point" id="slide-2">
+		<input type="radio" name="point" id="slide-3">
 		<div class="slider-controls">
-			<i class="action"></i>
-			<i></i>
-			<i></i>
+			<label for="slide-1"></label>
+			<label for="slide-2"></label>
+			<label for="slide-3"></label>
 		</div>
 		<div class="slides">
 			<div class="slide slide-1">
@@ -183,35 +186,38 @@
 	</div>
 	<div class="service">
 		<div class="container clearfix">
+			<input type="radio" name="service-point" id="service-1" checked>
+			<input type="radio" name="service-point" id="service-2">
+			<input type="radio" name="service-point" id="service-3">
 			<div class="service-menu">
 				<ul class="service-list">
-					<li class="active">
-						<a class="btn" href="#">Доставка</a>
+					<li>
+						<label class="btn" for="service-1">Доставка</label>
 					</li>
 					<li>
-						<a class="btn" href="#">Гарантия</a>
+						<label class="btn" for="service-2">Гарантия</label>
 					</li>
 					<li>
-						<a class="btn" href="#">Кредит</a>
+						<label class="btn" for="service-3">Кредит</label>
 					</li>
 				</ul>
 			</div>
-			<div class="service-slide">
-				<div class="service-slide-1">
+			<div class="service-slides">
+				<div class="service-slide service-1">
 					<h2>Доставка</h2>
 					<p>
 						Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! ведь мы неплохо зарабатываем, поднимая его на ваш этах.
 					</p>
 					<img src="img/service-delivery.png" width="180" height="196" alt="Доставка">
 				</div>
-				<div class="service-slide-2">
+				<div class="service-slide service-2">
 					<h2>Гарантия</h2>
 					<p>
 						Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.
 					</p>
 					<img src="img/service-guarantee.png" width="180" height="196" alt="Гарантия">
 				</div>
-				<div class="service-slide-3">
+				<div class="service-slide service-3">
 					<h2>Кредит</h2>
 					<p>
 						Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
@@ -251,8 +257,8 @@
 				<p>
 					Вы можете забрать товар сами, заехав в наш офс. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 				</p>
-				<a href="map.html"><img src="img/map.jpg" width="560" height="222" alt="Карта проезда"></a>
-				<a class="btn" href="form.html">Напишите нам</a>
+				<a class="modal-map" href="map.html"><img src="img/map.jpg" width="560" height="222" alt="Карта проезда"></a>
+				<a class="btn modal-contact-us" href="form.html">Напишите нам</a>
 			</div>
 		</div>
 	</div>
@@ -301,7 +307,7 @@
 					</li>
 				</ul>
 				Тел.: +7 (495) 495-95-95
-				<a class="developer" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+				<a class="developer sprite sprite-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss"></a>
 			</div>
 		</div>
 	</footer>
@@ -314,10 +320,10 @@
 			</div>
 			<div class="feedback-form-email">
 				<label for="email">Ваш e-mail:</label>
-				<input type="text" name="email" id="email " placeholder="Для отправки ответа">
+				<input type="text" name="email" id="email" placeholder="Для отправки ответа">
 			</div>
 			<label for="text">Текст письма:</label>
-			<textarea name="text" placeholder="В свободной форме"></textarea>
+			<textarea name="text" id="text" placeholder="В свободной форме"></textarea>
 			<button class="btn" type="submit">Отправить</button>
 		</form>
 	</div>
@@ -325,6 +331,7 @@
 		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
 		<img src="img/map-big.png" width="960" height="560" alt="Схема проезда">
 	</div>
+	<script src="js/scripts.min.js"></script>
 </body>
 
 </html>
