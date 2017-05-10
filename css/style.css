@@ -720,10 +720,8 @@ a.nav-exit:active {
 	-moz-filter: grayscale(100%);
 	-ms-filter: grayscale(100%);
 	-o-filter: grayscale(100%);
-	/* Firefox 4+ */
 	-webkit-filter: gray;
 	filter: gray;
-	/* IE 6-9 */
 }
 
 .logotype a:last-child {
