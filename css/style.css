@@ -56,7 +56,7 @@ a {
 .btn:hover {
 	background: -webkit-linear-gradient(#f4d361 1px, #f4d361 40px);
 	background: linear-gradient(#f4d361 1px, #f4d361 40px);
-	cursor: pointer;
+	cursor: pointer; 
 }
 
 .btn:active {
@@ -418,7 +418,7 @@ a.nav-exit:active {
 	background: linear-gradient(#f7e296 1px, #f7e296 113px, transparent 113px);
 }
 
-.slider>input {
+.slider > input {
 	display: none;
 }
 
@@ -465,16 +465,16 @@ a.nav-exit:active {
 	opacity: 0;
 }
 
-#slide-1:checked~.slides>.slide-1,
-#slide-2:checked~.slides>.slide-2,
-#slide-3:checked~.slides>.slide-3 {
+#slide-1:checked ~ .slides > .slide-1,
+#slide-2:checked ~ .slides > .slide-2,
+#slide-3:checked ~ .slides > .slide-3 {
 	opacity: 1;
 	z-index: 10;
 }
 
-#slide-1:checked~.slider-controls label:nth-of-type(1),
-#slide-2:checked~.slider-controls label:nth-of-type(2),
-#slide-3:checked~.slider-controls label:nth-of-type(3) {
+#slide-1:checked ~ .slider-controls label:nth-of-type(1),
+#slide-2:checked ~ .slider-controls label:nth-of-type(2),
+#slide-3:checked ~ .slider-controls label:nth-of-type(3) {
 	opacity: 1;
 }
 
@@ -615,6 +615,10 @@ a.nav-exit:active {
 	background-color: #e5e5e5;
 }
 
+.service input {
+	display: none;
+}
+
 .service .service-menu {
 	float: left;
 	position: relative;
@@ -648,24 +652,34 @@ a.nav-exit:active {
 	min-width: 160px;
 }
 
-.service-list .active {
-	color: #f7e184;
-	background: #000000;
-}
-
-.service-list .active a {
-	color: #f7e184;
-	background: #000000;
-}
-
-.service-slide {
+.service-slides {
 	float: right;
 	position: relative;
 	padding-left: 120px;
 	width: 760px;
 }
 
-.service-slide h2 {
+.service-slide {
+	display: none;
+}
+
+#service-1:checked ~ .service-slides .service-1,
+#service-2:checked ~ .service-slides .service-2,
+#service-3:checked ~ .service-slides .service-3 {
+	display: block;
+}
+
+#service-1:checked ~ .service-menu li:nth-of-type(1),
+#service-1:checked ~ .service-menu li:nth-of-type(1) label,
+#service-2:checked ~ .service-menu li:nth-of-type(2),
+#service-2:checked ~ .service-menu li:nth-of-type(2) label,
+#service-3:checked ~ .service-menu li:nth-of-type(3),
+#service-3:checked ~ .service-menu li:nth-of-type(3) label {
+	color: #f7e184;
+	background: #000000;
+}
+
+.service-slides h2 {
 	padding: 0;
 	margin: 0;
 	margin-top: -18px;
@@ -675,23 +689,15 @@ a.nav-exit:active {
 	color: #000000;
 }
 
-.service-slide p {
+.service-slides p {
 	width: 450px;
 	margin-top: 40px;
 }
 
-.service-slide img {
+.service-slides img {
 	position: absolute;
 	top: -41px;
 	right: 47px;
-}
-
-.service-slide-2 {
-	display: none;
-}
-
-.service-slide-3 {
-	display: none;
 }
 
 .logotype {
@@ -1109,13 +1115,13 @@ a.nav-exit:active {
 
 .catalog-filter::after {
 	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 2000px;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.08);
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2000px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.08);
 	z-index: -1;
 }
 
