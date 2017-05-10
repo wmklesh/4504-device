@@ -2,14 +2,14 @@
 	font-family: 'Gilroy';
 	font-style: normal;
 	font-weight: 300;
-	src: local('Gilroy'), url('fonts/gilroylight.woff2') format('woff2'), url('fonts/gilroylight.woff') format('woff');
+	src: local('Gilroy'), url('../fonts/gilroylight.woff2') format('woff2'), url('../fonts/gilroylight.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Gilroy';
 	font-style: normal;
 	font-weight: 800;
-	src: local('Gilroy'), url('fonts/gilroyextrabold.woff2') format('woff2'), url('fonts/gilroyextrabold.woff') format('woff');
+	src: local('Gilroy'), url('../fonts/gilroyextrabold.woff2') format('woff2'), url('../fonts/gilroyextrabold.woff') format('woff');
 }
 
 body {
@@ -335,9 +335,9 @@ a {
 .nav-user-panel .nav-user::before {
 	content: "";
 	display: inline-block;
-	margin-right: 14px;
 	width: 13px;
 	height: 12px;
+	margin-right: 14px;
 	vertical-align: baseline;
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
@@ -1311,6 +1311,7 @@ a.nav-exit:active {
 	height: 7px;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
