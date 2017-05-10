@@ -3,9 +3,9 @@
 
 <head>
 	<meta charset="utf-8">
-	<link href=" " rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<title>HTML Academy: Девайс</title>
 </head>
 
@@ -75,10 +75,13 @@
 		</div>
 	</header>
 	<div class="slider">
+		<input type="radio" name="point" id="slide-1" checked>
+		<input type="radio" name="point" id="slide-2">
+		<input type="radio" name="point" id="slide-3">
 		<div class="slider-controls">
-			<i class="action"></i>
-			<i></i>
-			<i></i>
+			<label for="slide-1"></label>
+			<label for="slide-2"></label>
+			<label for="slide-3"></label>
 		</div>
 		<div class="slides">
 			<div class="slide slide-1">
@@ -314,10 +317,10 @@
 			</div>
 			<div class="feedback-form-email">
 				<label for="email">Ваш e-mail:</label>
-				<input type="text" name="email" id="email " placeholder="Для отправки ответа">
+				<input type="text" name="email" id="email" placeholder="Для отправки ответа">
 			</div>
 			<label for="text">Текст письма:</label>
-			<textarea name="text" placeholder="В свободной форме"></textarea>
+			<textarea name="text" id="text" placeholder="В свободной форме"></textarea>
 			<button class="btn" type="submit">Отправить</button>
 		</form>
 	</div>
